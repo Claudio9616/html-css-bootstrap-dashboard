@@ -4,8 +4,215 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylecss/style.css">
 </head>
 <body>
-    
+<header></header>
+<div class="big-box d-flex">
+    <div class="side-bar text-center text-light bg-img">
+      <div class="side-bar-top pt-3">
+        <div class="py-2"><i class="fa-solid fa-house"></i> <span class="d-none d-lg-inline">Home</span></div>
+        <div class="py-2"><i class="fa-solid fa-chart-simple"></i> <span class="d-none d-lg-inline">Stats</span></div>
+        <div class="py-2"><i class="fa-solid fa-signal"></i> <span class="d-none d-lg-inline">Signals</span></div>
+      </div>
+      <div class="side-bar-bottom">
+        <i class="fa-solid fa-gear"></i> <span class="d-none d-lg-inline">Admin</span>
+      </div>
+    </div>
+    <main>
+        <div class="nav-bar mb-2 pt-3"></div>
+        <div class="content-center container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-lg-8"> 
+                  <h3>Prossime classi</h3>
+                  <table class="table table-hover mb-5">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col" class="text-center">Data inizio</th>
+                        <th scope="col" class="text-center">ROI</th>
+                        <th scope="col" class="text-center">Stato</th>
+                        <th scope="col" class="text-center">Azioni</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle" alt="">
+                          <span class="align-middle">Classe 75</span>
+                        </td>
+                        <td>15 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg"  class="align-middle" alt="">
+                          <span class="align-middle">Classe 76</span>
+                        </td>
+                        <td>16 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle" alt="">
+                          <span class="align-middle">Classe 77</span>
+                        </td>
+                        <td>17 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-warning btn-sm">process</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle"" alt="">
+                          <span class="align-middle"">Classe 78</span>
+                        </td>
+                        <td>18 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle" alt="">
+                          <span class="align-middle">Classe 79</span>
+                        </td>
+                        <td>19 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-danger btn-sm">falled</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle" alt="">
+                          <span class="align-middle">Classe 80</span>
+                        </td>
+                        <td>20 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle" alt="">
+                          <span class="align-middle">Classe 81</span>
+                        </td>
+                        <td>21 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-danger btn-sm">falled</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                      <tr class="text-center">
+                        <td class="text-start">
+                          <img src="img/class-avatar.jpg" class="align-middle" alt="">
+                          <span class="align-middle">Classe 82</span>
+                        </td>
+                        <td>22 Feb 2021</td>
+                        <td>20%</td>
+                        <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
+                        <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <h3>F.A.Q</h3>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <strong>Come aggiungere un nuovo studente?</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Clicca sul + in alto nella sezione blu.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <strong>Come posso accedere alle informazioni del mio account?</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Clicca sull'cona della campanella
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          <strong>Posso usare questa dashbord da mobile?</strong>
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          Si.
+                        </div>
+                      </div>
+                    </div>
+                  </div>                   
+                </div>
+                <div class="col-sm-12 col-lg-4">
+                  <h3>Todo</h3>
+                    <ul class="list-group mb-5">
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                          <label class="form-check-label stretched-link" for="firstCheckboxStretched">Kickoff nuove classi</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                          <label class="form-check-label stretched-link" for="secondCheckboxStretched">Lezione su Bootstrap 5 in classe #75</label>
+                        </li>
+                        <li class="list-group-item">
+                          <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                          <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Controllare username github studenti</label>
+                        </li>
+                      </ul>
+                      <div class="card" style="width: 23rem;">
+                        <img src="img/stats.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Utenti attivi</h5>
+                          <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">Gennaio: 1200</li>
+                          <li class="list-group-item">Febbraio: 800</li>
+                          <li class="list-group-item">Marzo: 1500</li>
+                        </ul>
+                        <div class="card-body">
+                          <a href="#" class="card-link">Visualizza report approfondito</a>                          
+                        </div>
+                      </div>                                       
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+<!-- chiedere se per la nav-bar se esiste una dimensione reattiva che non sia in percentuale
+senza usre le media query -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>
