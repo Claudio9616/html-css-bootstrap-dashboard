@@ -46,9 +46,6 @@ td img{
     background-size: contain;
     width: 50px;
 }
-.form-control{
-    flex-basis: 1200px;
-}
 .c-gray{
     color: #5B5858;
 }
