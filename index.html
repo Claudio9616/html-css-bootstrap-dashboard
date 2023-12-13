@@ -44,8 +44,105 @@
       </div>
   </div>
   <main>
-        <div class="nav-bar mb-2 pt-3 container-fluid">
-          <div class="fs-2 text-light">Boolean <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0">Small button</button></div>
+        <div class="nav-bar mb-2 pt-3 container-fluid text-light">
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col col-lg-6">
+                <h1>Boolean <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0">Piano blaze</button></h1>
+                <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0">3 app</button>
+                <i class="fa-solid fa-angles-right"></i>
+                <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0 d-lg-none">+</button>
+                <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0 d-none d-lg-inline">Boolean mobile app</button>
+                <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0 d-none d-lg-inline">Boolean web app</button>
+                <button type="button" class="btn btn-sm bg-bluenavy text-light rounded-5 py-0 d-none d-lg-inline">Boolean blog app</button>
+              </div>
+              <div class="col col-lg-4">
+                <p>Studenti online negli ultimi 30 minuti</p>
+                <h2>125</h2>
+              </div>
+              <div class="col col-lg-2 order-first order-md-last">
+                <p class="align-middle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Nuovo Studente <i class="fa-regular fa-square-plus icon-navbar align-middle"></i></p>
+                <div class="offcanvas offcanvas-end width-canvas" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <form action="">
+                      <div class="row">
+                        <div class="col">
+                          <div>
+                            <h5>Nome</h5>
+                            <input type="password" class="my-input"> 
+                          </div>   
+                          <div class="pt-2">
+                            <h5>Email</h5>
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text" id="addon-wrapping">@</span>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                          </div>  
+                          <div>
+                            <h5 class="pt-2">Indirizzo Email</h5>
+                            <div class="input-group flex-nowrap">
+                              <span class="input-group-text" id="addon-wrapping">@</span>
+                              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                          </div>                   
+                        </div>
+                        <div class="col">
+                          <div>
+                            <h5>Cognome</h5>
+                            <input type="text" class="my-input">
+                          </div>
+                          <div>
+                            <h5 class="pt-2">Password</h5>
+                            <input type="password" class="my-input">
+                          </div>
+                          <div>
+                            <h5 class="pt-2">Password</h5>
+                            <input type="password" class="my-input">
+                          </div>
+                        </div>
+                      </div> 
+                      <h5 class="pt-2">Indirizzo</h5> 
+                      <div class="input-group input-group mb-3">                                          
+                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                      </div>
+                      <div class="row">
+                        <div class="col col-6">
+                          <h5>Città</h5>
+                          <input type="text" class="my-input">
+                        </div>
+                        <div class="col col-4">
+                          <h5>Stato</h5>
+                          <label for="States"></label>
+                          <select name="States" id="States" class="my-input-states">
+                            <option value="Scegli">Scegli...</option>
+                            <option value="Italia">Italia</option>
+                            <option value="Germania">Germania</option>
+                            <option value="Spagna">Spagna</option>
+                            <option value="Francia">Francia</option>
+                          </select>
+                        </div>
+                        <div class="col col-2">
+                          <h5>CAP</h5>
+                          <input type="text" class="my-input-cap">
+                        </div>
+                      </div>                                            
+                      <h5 class="pt-2">Foto</h5> 
+                      <div class="input-group mb-3">                                           
+                        <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                      </div>
+                      <input type="checkbox" required> Seleziona per proseguire    
+                      <div>
+                        <button type="submit" class="bg-primary text-light">Salva</button>   
+                        <button type="reset" class="bg-warning">Svuota</button>          
+                      </div>   
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="content-center container-fluid">
             <div class="row">
@@ -59,8 +156,8 @@
                         <thead>
                           <tr>
                             <th scope="col">Nome</th>
-                            <th scope="col" class="text-center">Data inizio</th>
-                            <th scope="col" class="text-center">ROI</th>
+                            <th scope="col" class="text-center d-none d-md-table-cell">Data inizio</th>
+                            <th scope="col" class="text-center d-none d-md-table-cell">ROI</th>
                             <th scope="col" class="text-center">Stato</th>
                             <th scope="col" class="text-center">Azioni</th>
                           </tr>
@@ -71,8 +168,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 75</span>
                             </td>
-                            <td>15 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -81,8 +178,8 @@
                               <img src="img/class-avatar.jpg"  class="align-middle" alt="">
                               <span class="align-middle">Classe 76</span>
                             </td>
-                            <td>16 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">16 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -91,8 +188,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 77</span>
                             </td>
-                            <td>17 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-warning btn-sm">process</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -101,8 +198,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 78</span>
                             </td>
-                            <td>18 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">18 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -111,8 +208,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 79</span>
                             </td>
-                            <td>19 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-danger btn-sm">falled</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -121,8 +218,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 80</span>
                             </td>
-                            <td>20 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">20 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -131,8 +228,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 81</span>
                             </td>
-                            <td>21 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">21 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-danger btn-sm">falled</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>
@@ -141,8 +238,8 @@
                               <img src="img/class-avatar.jpg" class="align-middle" alt="">
                               <span class="align-middle">Classe 82</span>
                             </td>
-                            <td>22 Feb 2021</td>
-                            <td>20%</td>
+                            <td class="d-none d-md-table-cell">22 Feb 2021</td>
+                            <td class="d-none d-md-table-cell">20%</td>
                             <td><button type="button" class="btn btn-success btn-sm">Done</button></td>
                             <td><i class="fa-solid fa-pen asd my-icon"></i> <i class="fa-solid fa-trash my-icon"></i></td>
                           </tr>

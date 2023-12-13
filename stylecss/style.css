@@ -64,6 +64,27 @@ td img{
 .bg-bluenavy{
     background-color: #165BBA;
 }
+.icon-navbar{
+    font-size: 3rem;
+    cursor: pointer;
+}
+.width-canvas{
+    min-width: 600px;
+}
+.my-input{
+    width: 270px;
+    height: 37px;
+    border-radius: 5px;
+    border-color: #CED4DA;
+}
+.my-input-states{
+    width: 165px;
+    height: 37px;
+}
+.my-input-cap{
+    width: 70px;
+    height: 37px;
+}
 @media screen and (min-width: 992px) {
     .side-bar{
         flex-basis: 150px;
