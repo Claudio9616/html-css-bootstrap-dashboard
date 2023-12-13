@@ -3,11 +3,10 @@ body{
     background-color: #F8F9FA;
 }
 header{
-    background-color: beige;
-    height: 100px;
+    height: 54px;
 }
 .big-box{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 54px);
     overflow: auto;
 }
 .side-bar{
@@ -22,15 +21,6 @@ main{
 .nav-bar{
     background-color: #1B72E8;
     min-height: 100px;
-}
-.content-center{
-    height:calc(100% - 100px);
-}
-h3{
-    background-color: lightgrey;
-    margin-bottom: 0;
-    border: 1px solid #F7F7F7;
-    border-radius: 5px 5px 0 0;
 }
 td img{
     width: 25px;
@@ -52,8 +42,33 @@ td img{
 .side-bar-top{
     height: 600px;
 }
+.img-size{
+    background-size: contain;
+    width: 50px;
+}
+.form-control{
+    flex-basis: 1200px;
+}
+.c-gray{
+    color: #5B5858;
+}
+.c-orange{
+    color: #FF8F00;
+}
+.bg-gray{
+    background-color: #E5E5E5;
+}
+.search{
+    height: 38px;
+}
+.bg-bluenavy{
+    background-color: #165BBA;
+}
 @media screen and (min-width: 992px) {
     .side-bar{
         flex-basis: 150px;
+    }
+    .search{
+        height: 37px;
     }
 }
